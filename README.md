@@ -18,5 +18,5 @@ This allows the application code to worry less about application code to get up 
 
 Current implementations:
 
-*  Lambda API Proxy (coming soon)
+*  Lambda API Proxy [GitHub](https://github.com/stoiveyp/Slack.NetStandard.Endpoint.ApiGatewayLambdaProxy) / [NuGet](https://nuget.org/packages/Slack.NetStandard.Endpoint.ApiGatewayLambdaProxy)
 *  Web API Middleware (coming soon)
