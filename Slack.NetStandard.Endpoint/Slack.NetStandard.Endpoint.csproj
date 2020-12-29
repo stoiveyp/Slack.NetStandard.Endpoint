@@ -7,11 +7,12 @@
     <Authors>Steven Pears</Authors>
     <Company />
     <Description>Small library used to build single Slack endpoints - allowing simpler wiring of Slack apps by examining the full request and deserializing appropriately</Description>
-    <PackageReleaseNotes>Initial release</PackageReleaseNotes>
+    <PackageReleaseNotes>Add NotVerifiedRequest and UnknownRequest types to SlackRequestType</PackageReleaseNotes>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <RepositoryUrl>https://github.com/stoiveyp/Slack.NetStandard.Endpoint</RepositoryUrl>
     <PackageTags>slack</PackageTags>
     <PackageProjectUrl>https://github.com/stoiveyp/Slack.NetStandard.Endpoint</PackageProjectUrl>
+    <Version>1.1.0</Version>
   </PropertyGroup>
 
   <ItemGroup>
