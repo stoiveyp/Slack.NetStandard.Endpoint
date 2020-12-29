@@ -10,17 +10,13 @@ namespace Slack.NetStandard.Endpoint
         public async Task<TResponse> Process(TRequest request)
         {
             var info = await GenerateInformation(request);
-            if (info == null)
-            {
-                return await InvalidRequestResponse(request);
-            }
 
             return info.Type switch
             {
                 SlackRequestType.Event => await ProcessEvent(info.Event),
                 SlackRequestType.Interaction => await ProcessInteraction(info.Interaction),
                 SlackRequestType.Command => await ProcessCommand(info.Command),
-                _ => await InvalidRequestResponse(request)
+                _ => await InvalidRequestResponse(info, request)
             };
         }
 
@@ -61,6 +57,6 @@ namespace Slack.NetStandard.Endpoint
 
         protected abstract Task<TResponse> DefaultOKResponse(string body = null);
 
-        protected abstract Task<TResponse> InvalidRequestResponse(TRequest request);
+        protected abstract Task<TResponse> InvalidRequestResponse(SlackInformation info, TRequest request);
     }
 }
