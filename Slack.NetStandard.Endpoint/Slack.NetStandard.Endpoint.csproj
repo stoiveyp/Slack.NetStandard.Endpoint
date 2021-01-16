@@ -7,16 +7,16 @@
     <Authors>Steven Pears</Authors>
     <Company />
     <Description>Small library used to build single Slack endpoints - allowing simpler wiring of Slack apps by examining the full request and deserializing appropriately</Description>
-    <PackageReleaseNotes>add content type and body parsing to SlackEndpoint</PackageReleaseNotes>
+    <PackageReleaseNotes>add extension to convert Envelope to SlackInformation</PackageReleaseNotes>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <RepositoryUrl>https://github.com/stoiveyp/Slack.NetStandard.Endpoint</RepositoryUrl>
     <PackageTags>slack</PackageTags>
     <PackageProjectUrl>https://github.com/stoiveyp/Slack.NetStandard.Endpoint</PackageProjectUrl>
-    <Version>1.2.2</Version>
+    <Version>1.2.3</Version>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Slack.NetStandard" Version="2.8.6" />
+    <PackageReference Include="Slack.NetStandard" Version="2.9.0" />
   </ItemGroup>
 
   <ItemGroup>
