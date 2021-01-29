@@ -12,7 +12,7 @@ namespace Slack.NetStandard.Endpoint
             return envelope.Payload switch
             {
                 SlashCommand command => new SlackInformation(command),
-                ICallbackEvent evt => new SlackInformation(new EventCallback{Event = evt}),
+                EventCallback evt => new SlackInformation(evt),
                 InteractionPayload payload => new SlackInformation(payload),
                 _ => new SlackInformation(SlackRequestType.UnknownRequest)
             };
